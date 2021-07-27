@@ -1,0 +1,417 @@
+.iphone {
+  height: 484px;
+  width: 224px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 65px;
+  margin-bottom: 65px;
+  padding: 12px;
+  background-color: white;
+  border-radius: 24px;
+  z-index: 1;
+  -webkit-box-shadow: 10px 20px 20px #e5e9eb;
+          box-shadow: 10px 20px 20px #e5e9eb;
+}
+
+@media (min-width: 1024px) {
+  .iphone {
+    margin: 145px;
+    -webkit-box-shadow: 30px 40px 10px #e5e9eb;
+            box-shadow: 30px 40px 10px #e5e9eb;
+  }
+}
+
+.iphone .wrap {
+  background-color: #f5f3f7;
+  border-radius: 15px;
+}
+
+.iphone .wrap .user {
+  color: #d89eff;
+  height: 66px;
+  background: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(to right, #8838ff, #e942ff);
+  border-radius: 14px 14px 5px 5px;
+}
+
+.iphone .wrap .user::before {
+  display: block;
+  content: "";
+  width: 130px;
+  height: 20px;
+  top: -1px;
+  position: relative;
+  background-color: white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 0 0 13px 13px;
+}
+
+.iphone .wrap .user__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iphone .wrap .user__leftarrow {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.iphone .wrap .user__avatar {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iphone .wrap .user__avatar .image {
+  margin-right: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(/images/avatar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid #d89eff;
+}
+
+.iphone .wrap .user__information {
+  text-align: left;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.iphone .wrap .user__name {
+  font-size: 11px;
+  color: #d89eff;
+  font-weight: 700;
+}
+
+.iphone .wrap .user__status {
+  font-size: 8px;
+}
+
+.iphone .wrap .user__ellipsis {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.iphone .wrap .user__ellipsis span {
+  width: 2px;
+  height: 2px;
+  display: block;
+  background-color: #d89eff;
+  margin-left: 50px;
+}
+
+.iphone .wrap .user__ellipsis span:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.iphone .wrap .chat {
+  font-size: 9px;
+  text-align: left;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.iphone .wrap .chat__left {
+  color: #9241c8;
+}
+
+.iphone .wrap .chat__left .text {
+  position: relative;
+  border-radius: 8px;
+  padding: 6px;
+  width: 55%;
+  background-color: #e3e6e8;
+  margin: 8px;
+}
+
+.iphone .wrap .chat__left .preis1, .iphone .wrap .chat__left .preis2 {
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  width: 65%;
+  height: 34px;
+  border-radius: 10px 10px 10px 5px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  color: #d89eff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iphone .wrap .chat__left .preis1 .circle, .iphone .wrap .chat__left .preis2 .circle {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.iphone .wrap .chat__left .preis1 .circle p, .iphone .wrap .chat__left .preis2 .circle p {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #d89eff;
+  border-radius: 50%;
+}
+
+.iphone .wrap .chat__left .preis1 .time, .iphone .wrap .chat__left .preis2 .time {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.iphone .wrap .chat__left .preis1 p, .iphone .wrap .chat__left .preis2 p {
+  font-size: 14px;
+  color: #f5f3f7;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-weight: 700;
+}
+
+.iphone .wrap .chat__right {
+  color: #6e5d7e;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.iphone .wrap .chat__right .text {
+  border-radius: 6px;
+  position: relative;
+  padding: 6px;
+  background-color: white;
+  width: 55%;
+  left: 32%;
+  margin: 8px;
+}
+
+.iphone .wrap .chat__right .dog__picture {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 55%;
+  left: 29%;
+  margin: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iphone .wrap .chat__right .dog__picture img {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.iphone .wrap .chat__right .dog__picture img:not(:last-child) {
+  margin-right: 11px;
+}
+
+.iphone .wrap .chat__input {
+  background-color: white;
+  height: 34px;
+  width: 92%;
+  position: relative;
+  left: 4%;
+  border-radius: 20px;
+}
+
+.iphone .wrap .chat__input .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 6px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+.iphone .wrap .chat__input .container .messenger {
+  font-size: 8px;
+  color: #c6cacd;
+}
+
+.iphone .wrap .chat__input .container .submitbutton {
+  width: 26px;
+  height: 26px;
+  background-color: #3e2753;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.para {
+  position: relative;
+  text-align: center;
+  padding-left: 42px;
+  padding-right: 42px;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .para {
+    text-align: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 445px;
+    padding-left: 120px;
+  }
+}
+
+.para__titel {
+  font-size: 30px;
+  color: #3e2753;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+  .para__titel {
+    font-size: 32px;
+  }
+}
+
+.para__description {
+  line-height: 1.5;
+  font-size: 15px;
+  color: #a39daa;
+  margin-bottom: 72px;
+}
+
+@media (min-width: 1024px) {
+  .para__description {
+    font-size: 16px;
+  }
+}
+
+body {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Public Sans', sans-serif;
+  background-color: #f5f3f7;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  body .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #9241c8;
+  height: 55%;
+  width: 100%;
+  border-radius: 0px 0px 50% 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  body::before {
+    width: 520px;
+    height: 700px;
+    border-radius: 0 0 300px 300px;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #e9eced;
+  height: 55%;
+  top: 438px;
+  width: 100%;
+  border-radius: 55% 55% 0 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  body::after {
+    width: 520px;
+    height: 700px;
+    border-radius: 0 0 300px 300px;
+    -webkit-transform: translateX(210%);
+            transform: translateX(210%);
+    top: 120px;
+  }
+}
+
+body .attribution {
+  z-index: 1;
+  position: relative;
+}
+
+body .attribution a {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.arrow {
+  border: solid #d89eff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*# sourceMappingURL=style.css.map */

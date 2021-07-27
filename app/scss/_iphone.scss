@@ -1,0 +1,227 @@
+.iphone{
+    height: 484px;
+    width: 224px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 65px;
+    margin-bottom: 65px;
+    padding: 12px;
+    background-color: $white;
+    border-radius: 24px;
+    z-index: 1;
+    box-shadow: 10px 20px 20px hsl(206, 15%, 91%);
+
+    @include breakpoint-up(large){
+        margin: 145px;
+        box-shadow: 30px 40px 10px hsl(206, 15%, 91%);
+     }
+    .wrap {    
+        background-color: $lightGrayishViolet;
+        border-radius: 15px;  
+        .user {
+            color: $paleViolet;
+            height: 66px;
+            background: linear-gradient(to right, $lightViolet, $lightMagenta);
+            border-radius: 14px 14px 5px 5px;
+            &::before {
+                display: block;
+                content: "";
+                width: 130px;
+                height: 20px;
+                top: -1px;
+                position: relative;
+                background-color: $white;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 0 0 13px 13px;
+            }
+
+            &__container {
+                display: flex;
+                //padding: 12px;
+                align-items: center;
+            }
+
+            &__leftarrow {
+                margin: 0;
+                flex-grow: 1;
+                text-align: right;
+            }
+
+            &__avatar {
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+               .image {
+                    margin-right: 0;
+                    width: 25px;
+                    height: 25px;
+                    background-image: url(/images/avatar.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 50%;
+                    border: 2px solid $paleViolet;
+                }
+               
+            }
+
+            &__information {
+                text-align: left;
+                flex-grow: 2;
+                
+            }
+
+            
+
+            &__name {
+                font-size: 11px;
+                color: $paleViolet;
+                font-weight: 700;
+            }
+
+            &__status {
+                font-size: 8px;
+                
+            }
+
+            &__ellipsis {
+                flex-grow: 1;
+                
+                span {
+                    width: 2px;
+                    height: 2px;
+                    display: block;
+                    background-color: $paleViolet;
+                    margin-left: 50px;
+                    &:not(:last-child){
+                        margin-bottom: 2px;
+
+                    }
+                }
+            }
+        }
+
+        .chat {
+            
+            font-size: 9px;
+            text-align: left;
+            padding-top: 6px;
+            padding-bottom: 6px;
+
+            &__left {
+                color: $moderateViolet;
+                .text {
+                    position: relative;
+                    border-radius: 8px;
+                    padding: 6px;
+                    width: 55%; 
+                    background-color:hsl(204, 9%, 90%);
+                    //left: 5%;
+                    margin: 8px;
+                }
+
+                .preis1, .preis2 {
+                    background: linear-gradient(to right, $lightMagenta, $lightViolet);
+                    width: 65%;
+                    height: 34px;
+                    border-radius: 10px 10px 10px 5px;
+                    margin: 10px;
+                    display: flex;
+                    font-size: 10px;
+                    color: $paleViolet;
+                    align-items: center;
+                    justify-content: space-between;
+                    .circle {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        p {
+                            width: 10px;
+                            height: 10px;
+                            border: 2px solid $paleViolet;
+                            border-radius: 50%;
+                        }
+                    }
+                    .time {
+                        flex-grow: 2;
+                    }
+                    p{  
+                        font-size: 14px;
+                        color:$lightGrayishViolet ;
+                        flex-grow: 1;
+                        font-weight: 700;
+                    }
+                    
+                }
+
+            }
+
+            &__right {
+                color: $desaturedDarkViolet;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                .text {
+                    border-radius: 6px;
+                    position: relative;
+                    padding: 6px;
+                    background-color: $white;
+                    width: 55%;
+                    left: 32%;
+                    margin: 8px;
+                } 
+                
+                .dog__picture{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    width: 55%;
+                    left: 29%;
+                    margin: 8px;
+                    justify-content: space-between;
+                    img {
+                        border-radius: 10px;
+                        width: 40px;
+                        height: 40px;
+                        &:not(:last-child) {
+                            margin-right: 11px;
+                        }
+                    }
+                } 
+            }
+
+            &__input {
+                background-color: $white;
+                height: 34px;
+                width: 92%;
+                position: relative;
+                left: 4%;
+                border-radius: 20px;
+                
+                .container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 20px;
+                    padding-right: 6px;
+                    padding-top: 5px;
+                    padding-bottom: 4px;
+                    .messenger {
+                        font-size: 8px;
+                        color: $grayishBlue;
+                    }
+    
+                    .submitbutton {
+                        width: 26px;
+                        height: 26px;
+                        background-color: $veryDarkDesaturatedViolet;
+                        border-radius: 50%;
+                        text-align: center;
+                        
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
